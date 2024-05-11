@@ -53,7 +53,7 @@ class Loading : AppCompatActivity() {
         } else {
             //No internet connection
             loadingProgressBar.visibility = View.GONE
-            Toast.makeText(this, "No Internet Connection.", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "No Internet Connection.", Toast.LENGTH_SHORT).show()
             retryButton.visibility = View.VISIBLE
         }
     }

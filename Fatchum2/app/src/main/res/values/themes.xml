@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.Fatchum20" parent="Base.Theme.Fatchum20" />
+
+    <!--Checkbox-->
+<!--    <style name="checkBoxStyle" parent="Base.Theme.Fatchum20">-->
+<!--        <item name="colorAccent">@android:color/black</item>-->
+<!--    </style>-->
+
 </resources>
