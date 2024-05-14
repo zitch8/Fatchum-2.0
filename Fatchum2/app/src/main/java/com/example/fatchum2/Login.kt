@@ -51,7 +51,6 @@ class Login : AppCompatActivity() {
         register.setOnClickListener {
             val openRegister = Intent(this@Login, Register::class.java)
             startActivity(openRegister)
-            finish()
         }
         //Login Button Click Listener
         loginButton.setOnClickListener { login() }
