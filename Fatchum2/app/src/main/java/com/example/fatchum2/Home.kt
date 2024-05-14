@@ -4,7 +4,10 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.OnScrollChangeListener
 import android.view.ViewGroup
+import androidx.annotation.NonNull
+import androidx.recyclerview.widget.RecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,15 +20,18 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class Home : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
+    private lateinit var recyclerViewHome: RecyclerView
+    private lateinit var mainActivity: Main
+//    // TODO: Rename and change types of parameters
+//    private var param1: String? = null
+//    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+//            param1 = it.getString(ARG_PARAM1)
+//            param2 = it.getString(ARG_PARAM2)
         }
     }
 
@@ -34,7 +40,30 @@ class Home : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        recyclerViewHome = view.findViewById(R.id.recyclerViewHome)
+
+        mainActivity = activity as Main
+
+        val state = IntArray(1)
+        recyclerViewHome.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+                super.onScrollStateChanged(recyclerView, newState)
+                state[0]=newState
+
+            }
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                super.onScrolled(recyclerView, dx, dy)
+
+                if(dy>0 && (state[0] == 0 || state[0] == 2)){
+                    hideToolbar()
+                } else if (dy<=10) {
+                    showToolbar()
+                }
+            }
+        })
+
+        return view
     }
 
     companion object {
@@ -55,5 +84,13 @@ class Home : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    private fun hideToolbar(){
+        mainActivity.mainAppBarLayout.setVisibility(View.GONE)
+    }
+
+    private fun showToolbar(){
+        mainActivity.mainAppBarLayout.setVisibility(View.VISIBLE)
     }
 }

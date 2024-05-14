@@ -43,7 +43,7 @@ class Loading : AppCompatActivity() {
         val isConnected = network != null && (capabilities?.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET) ?: false)
         Log.d("InternetConnection", "Is connected: $isConnected")
         if (isConnected) {
-            //Loading Screen
+            // Loading Screen
             handler.postDelayed({
                 //Go to next page after loading
                 val intent = Intent(this@Loading, Login::class.java)
@@ -51,7 +51,7 @@ class Loading : AppCompatActivity() {
                 finish();
             }, 1000)
         } else {
-            //No internet connection
+            // No internet connection
             loadingProgressBar.visibility = View.GONE
             Toast.makeText(this, "No Internet Connection.", Toast.LENGTH_SHORT).show()
             retryButton.visibility = View.VISIBLE

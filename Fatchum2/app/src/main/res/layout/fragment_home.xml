@@ -5,10 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHome"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Main Fragment" />
+        android:fitsSystemWindows="true"
+        android:padding="2dp"/>
 
 </FrameLayout>

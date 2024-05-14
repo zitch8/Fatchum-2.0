@@ -5,15 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_fatchum"/>
+
     <TextView
         android:id="@+id/tvTitleLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fatchum 2.0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="20dp"
+        android:text="FATCHUM 2.0"
+        android:textSize="20sp"
+        android:textColor="@color/semiBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <!--Warning Text Info-->
     <TextView
@@ -21,6 +34,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="holder"
+        android:textColor="@color/darkOrange"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitleLogin" />
@@ -30,6 +45,7 @@
         android:id="@+id/cvLoginEmail"
         android:layout_width="268dp"
         android:layout_height="58dp"
+        android:layout_marginTop="10dp"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="@+id/tvInfoLogin"
         app:layout_constraintStart_toStartOf="@+id/tvInfoLogin"
@@ -67,6 +83,7 @@
         android:id="@+id/cvLoginPassword"
         android:layout_width="268dp"
         android:layout_height="58dp"
+        android:layout_marginTop="20dp"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="@+id/cvLoginEmail"
         app:layout_constraintStart_toStartOf="@+id/cvLoginEmail"
@@ -103,8 +120,9 @@
         android:id="@+id/checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:buttonTint="@android:color/black"
+        android:buttonTint="@color/darkOrange"
         android:text="Remember me"
+        android:layout_marginTop="10dp"
         android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/cvLoginPassword"
         app:layout_constraintTop_toBottomOf="@+id/cvLoginPassword" />
@@ -115,6 +133,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot Password?"
+        android:textColor="@color/orange"
         android:layout_marginStart="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/checkbox"
         app:layout_constraintEnd_toEndOf="@+id/cvLoginPassword"
@@ -126,6 +145,7 @@
         android:layout_width="268dp"
         android:layout_height="58dp"
         android:text="LOGIN"
+        android:backgroundTint="@color/darkOrange"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/tvForgotPassword"
         app:layout_constraintStart_toStartOf="@+id/checkbox"
@@ -136,6 +156,7 @@
         android:id="@+id/cvRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
         app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -150,6 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Don't have an account? "
+                android:layout_marginTop="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -159,11 +181,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Register"
-                android:textColor="@android:color/holo_purple"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@+id/textView2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
