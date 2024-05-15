@@ -56,9 +56,9 @@ class Home : Fragment() {
                 super.onScrolled(recyclerView, dx, dy)
 
                 if(dy>0 && (state[0] == 0 || state[0] == 2)){
-                    hideToolbar()
+                    mainActivity.hideToolbar()
                 } else if (dy<=10) {
-                    showToolbar()
+                    mainActivity.showToolbar()
                 }
             }
         })
@@ -84,13 +84,5 @@ class Home : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
-    }
-
-    private fun hideToolbar(){
-        mainActivity.mainAppBarLayout.setVisibility(View.GONE)
-    }
-
-    private fun showToolbar(){
-        mainActivity.mainAppBarLayout.setVisibility(View.VISIBLE)
     }
 }
