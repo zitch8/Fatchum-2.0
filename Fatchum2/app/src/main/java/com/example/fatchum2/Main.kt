@@ -1,6 +1,7 @@
 package com.example.fatchum2
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
@@ -22,9 +23,18 @@ class Main : AppCompatActivity() {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
             .setOnItemSelectedListener {
                 when(it.itemId){
-                    R.id.home -> replaceFragment(Home())
-                    R.id.favorite -> replaceFragment(Favorite())
-                    R.id.profile -> replaceFragment(Profile())
+                    R.id.home -> {
+                        showToolbar()
+                        replaceFragment(Home())
+                    }
+                    R.id.favorite -> {
+                        hideToolbar()
+                        replaceFragment(Favorite())
+                    }
+                    R.id.profile -> {
+                        hideToolbar()
+                        replaceFragment(Profile())
+                    }
                     else -> {}
                 }
                 true
@@ -38,5 +48,15 @@ class Main : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frameMain, fragment)
         fragmentTransaction.commit()
+    }
+
+    // To hide the search bar
+    fun hideToolbar(){
+        mainAppBarLayout.visibility = View.INVISIBLE
+    }
+
+    // To show the search bar
+    fun showToolbar(){
+        mainAppBarLayout.visibility = View.VISIBLE
     }
 }
