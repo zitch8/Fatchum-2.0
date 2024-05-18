@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+
 class Main : AppCompatActivity() {
     lateinit var mainAppBarLayout: AppBarLayout
     override fun onCreate(savedInstanceState: Bundle?) {
