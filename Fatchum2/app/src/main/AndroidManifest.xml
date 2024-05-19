@@ -36,6 +36,10 @@
             android:name=".Main"
             android:exported="false"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
 
     </application>
