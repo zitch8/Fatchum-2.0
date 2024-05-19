@@ -1,5 +1,6 @@
 package com.example.fatchum2
 
+import android.content.Intent
 import android.database.Cursor
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -32,6 +33,7 @@ class SearchArea : AppCompatActivity(), SearchResultAdapter.OnItemClickListener 
         val searchBar = findViewById<EditText>(R.id.etSearchBar)
         val recyclerView = findViewById<RecyclerView>(R.id.rvSuggestions)
         val btnAdd = findViewById<Button>(R.id.btnAdd)
+        val btnFind = findViewById<Button>(R.id.btnFind)
         selectedIngredientsContainer = findViewById(R.id.selectedIngredientsContainer)
         searchBar.requestFocus()
 
@@ -43,6 +45,10 @@ class SearchArea : AppCompatActivity(), SearchResultAdapter.OnItemClickListener 
                 searchBar.setText("")
 
             }
+        }
+
+        btnFind.setOnClickListener{
+            startActivity(Intent(this@SearchArea, RecommendedSearch::class.java))
         }
 
         searchResultsAdapter = SearchResultAdapter(searchResults, this)

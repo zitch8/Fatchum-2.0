@@ -14,6 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Main : AppCompatActivity() {
     lateinit var mainAppBarLayout: AppBarLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
