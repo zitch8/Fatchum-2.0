@@ -37,6 +37,7 @@ class SearchArea : AppCompatActivity(), SearchResultAdapter.OnItemClickListener 
         selectedIngredientsContainer = findViewById(R.id.selectedIngredientsContainer)
         searchBar.requestFocus()
 
+
         btnAdd.setOnClickListener {
             val ingredient = searchBar.text.toString()
 //            Toast.makeText(this, "${selectedList.contains(ingredient)}", Toast.LENGTH_SHORT).show()

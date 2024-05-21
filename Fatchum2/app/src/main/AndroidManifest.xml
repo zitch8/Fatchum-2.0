@@ -37,6 +37,9 @@
             android:name=".RecommendedSearch"
             android:exported="false" />
         <activity
+            android:name=".DetailScreen"
+            android:exported="false"/>
+        <activity
             android:name=".Main"
             android:exported="true"
             android:screenOrientation="portrait">
