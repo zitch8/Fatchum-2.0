@@ -1,0 +1,48 @@
+com.example.fatchum2.app-pngs-0 C:\Daren\Projects\Fatchum 2.0\Fatchum2\app\build\generated\res\pngs\debug
+com.example.fatchum2.app-res-1 C:\Daren\Projects\Fatchum 2.0\Fatchum2\app\build\generated\res\processDebugGoogleServices
+com.example.fatchum2.app-resValues-2 C:\Daren\Projects\Fatchum 2.0\Fatchum2\app\build\generated\res\resValues\debug
+com.example.fatchum2.app-packageDebugResources-3 C:\Daren\Projects\Fatchum 2.0\Fatchum2\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.fatchum2.app-packageDebugResources-4 C:\Daren\Projects\Fatchum 2.0\Fatchum2\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.fatchum2.app-merged_res-5 C:\Daren\Projects\Fatchum 2.0\Fatchum2\app\build\intermediates\merged_res\debug
+com.example.fatchum2.app-debug-6 C:\Daren\Projects\Fatchum 2.0\Fatchum2\app\src\debug\res
+com.example.fatchum2.app-main-7 C:\Daren\Projects\Fatchum 2.0\Fatchum2\app\src\main\res
+com.example.fatchum2.app-play-services-auth-21.1.1-8 C:\Users\daren\.gradle\caches\transforms-3\00bde15f3415806ed275f442b042a804\transformed\play-services-auth-21.1.1\res
+com.example.fatchum2.app-lifecycle-process-2.6.2-9 C:\Users\daren\.gradle\caches\transforms-3\0b037ce23d7a4f61d237c80e915da43d\transformed\lifecycle-process-2.6.2\res
+com.example.fatchum2.app-annotation-experimental-1.4.0-10 C:\Users\daren\.gradle\caches\transforms-3\143fd7fb107bf3019d02e0110971345d\transformed\annotation-experimental-1.4.0\res
+com.example.fatchum2.app-material-1.12.0-11 C:\Users\daren\.gradle\caches\transforms-3\1a620be67c8c9ced88614f41b242bac1\transformed\material-1.12.0\res
+com.example.fatchum2.app-media-1.0.0-12 C:\Users\daren\.gradle\caches\transforms-3\1b3a1986fd6c166add0554f8b1a72bf9\transformed\media-1.0.0\res
+com.example.fatchum2.app-appcompat-resources-1.6.1-13 C:\Users\daren\.gradle\caches\transforms-3\1dbaad6fd801ed025ef139ced58a7bfe\transformed\appcompat-resources-1.6.1\res
+com.example.fatchum2.app-cardview-1.0.0-14 C:\Users\daren\.gradle\caches\transforms-3\268aeb3326c5d4ce04b066e40a347f20\transformed\cardview-1.0.0\res
+com.example.fatchum2.app-play-services-basement-18.3.0-15 C:\Users\daren\.gradle\caches\transforms-3\2a398306bc22703f820b53fb46010dbd\transformed\play-services-basement-18.3.0\res
+com.example.fatchum2.app-profileinstaller-1.3.1-16 C:\Users\daren\.gradle\caches\transforms-3\2c4f40c44dcb96173d9bd71bdd89fe8d\transformed\profileinstaller-1.3.1\res
+com.example.fatchum2.app-lifecycle-livedata-core-2.6.2-17 C:\Users\daren\.gradle\caches\transforms-3\2e6b3ed4a357da36f0f2f4c2dafe415d\transformed\lifecycle-livedata-core-2.6.2\res
+com.example.fatchum2.app-appcompat-1.6.1-18 C:\Users\daren\.gradle\caches\transforms-3\2f67cb9d9098347ea4226f333a7c69f7\transformed\appcompat-1.6.1\res
+com.example.fatchum2.app-emoji2-views-helper-1.2.0-19 C:\Users\daren\.gradle\caches\transforms-3\43030c775eb0fed5479d667c036c64d6\transformed\emoji2-views-helper-1.2.0\res
+com.example.fatchum2.app-savedstate-1.2.1-20 C:\Users\daren\.gradle\caches\transforms-3\5656c5460180de2b2c998d0c1029c034\transformed\savedstate-1.2.1\res
+com.example.fatchum2.app-customview-poolingcontainer-1.0.0-21 C:\Users\daren\.gradle\caches\transforms-3\662100201e1efec97747b34e98799b2f\transformed\customview-poolingcontainer-1.0.0\res
+com.example.fatchum2.app-browser-1.4.0-22 C:\Users\daren\.gradle\caches\transforms-3\68a1cefc71a8b541ed1b338c625645b1\transformed\browser-1.4.0\res
+com.example.fatchum2.app-play-services-base-18.3.0-23 C:\Users\daren\.gradle\caches\transforms-3\6ea564c25e815d43065c7db18ae5a543\transformed\play-services-base-18.3.0\res
+com.example.fatchum2.app-fragment-1.5.7-24 C:\Users\daren\.gradle\caches\transforms-3\739d0cf3431fbc650b486329daaac528\transformed\fragment-1.5.7\res
+com.example.fatchum2.app-core-runtime-2.2.0-25 C:\Users\daren\.gradle\caches\transforms-3\7bf30e089c61d09ff55e85c6334827b6\transformed\core-runtime-2.2.0\res
+com.example.fatchum2.app-lifecycle-viewmodel-savedstate-2.6.2-26 C:\Users\daren\.gradle\caches\transforms-3\851d940b76199bd1fa1fc6feebc3d2bc\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
+com.example.fatchum2.app-viewpager2-1.1.0-beta02-27 C:\Users\daren\.gradle\caches\transforms-3\8b772afab946975abadade4cec4dc3e7\transformed\viewpager2-1.1.0-beta02\res
+com.example.fatchum2.app-recyclerview-1.3.2-28 C:\Users\daren\.gradle\caches\transforms-3\8f29e518056509e67e6fa45e3b89c93d\transformed\recyclerview-1.3.2\res
+com.example.fatchum2.app-drawerlayout-1.1.1-29 C:\Users\daren\.gradle\caches\transforms-3\9677486a7563820e0dac14ee1bafae11\transformed\drawerlayout-1.1.1\res
+com.example.fatchum2.app-core-ktx-1.13.1-30 C:\Users\daren\.gradle\caches\transforms-3\9b5ef39968b366e22eb8a03e3bce6e78\transformed\core-ktx-1.13.1\res
+com.example.fatchum2.app-credentials-play-services-auth-1.2.0-rc01-31 C:\Users\daren\.gradle\caches\transforms-3\a1319a6fb031b5730f8667ff10fb503c\transformed\credentials-play-services-auth-1.2.0-rc01\res
+com.example.fatchum2.app-activity-1.9.0-32 C:\Users\daren\.gradle\caches\transforms-3\a78f27cee2b95f6f44589cae5c3d94a7\transformed\activity-1.9.0\res
+com.example.fatchum2.app-lifecycle-runtime-ktx-2.6.2-33 C:\Users\daren\.gradle\caches\transforms-3\afaafa08a14a5556602447d589678f69\transformed\lifecycle-runtime-ktx-2.6.2\res
+com.example.fatchum2.app-lifecycle-runtime-2.6.2-34 C:\Users\daren\.gradle\caches\transforms-3\b314ed969776904b345652e198b79e43\transformed\lifecycle-runtime-2.6.2\res
+com.example.fatchum2.app-emoji2-1.2.0-35 C:\Users\daren\.gradle\caches\transforms-3\b332ce343b7949bcfeecfc423e55a513\transformed\emoji2-1.2.0\res
+com.example.fatchum2.app-activity-ktx-1.9.0-36 C:\Users\daren\.gradle\caches\transforms-3\b540cc42673c3621952719b67a7585b0\transformed\activity-ktx-1.9.0\res
+com.example.fatchum2.app-firebase-common-21.0.0-37 C:\Users\daren\.gradle\caches\transforms-3\c3f8adab7606897c00fba8290ac32022\transformed\firebase-common-21.0.0\res
+com.example.fatchum2.app-core-1.13.1-38 C:\Users\daren\.gradle\caches\transforms-3\c4e76f4931e760a7f43b814bbba7d5bd\transformed\core-1.13.1\res
+com.example.fatchum2.app-constraintlayout-2.1.4-39 C:\Users\daren\.gradle\caches\transforms-3\cb5b212051310b85e4eaf64c36f1f9dd\transformed\constraintlayout-2.1.4\res
+com.example.fatchum2.app-roundedimageview-2.3.0-40 C:\Users\daren\.gradle\caches\transforms-3\cfced495e30afe7292902531472bd282\transformed\roundedimageview-2.3.0\res
+com.example.fatchum2.app-startup-runtime-1.1.1-41 C:\Users\daren\.gradle\caches\transforms-3\d1b7f6eb58c9931205654d4ca1729c13\transformed\startup-runtime-1.1.1\res
+com.example.fatchum2.app-savedstate-ktx-1.2.1-42 C:\Users\daren\.gradle\caches\transforms-3\de8056aa60d66ab0c228bed68676f2ea\transformed\savedstate-ktx-1.2.1\res
+com.example.fatchum2.app-transition-1.5.0-43 C:\Users\daren\.gradle\caches\transforms-3\e644aa2c3f54febbab95c6d68eba7e2a\transformed\transition-1.5.0\res
+com.example.fatchum2.app-lifecycle-viewmodel-ktx-2.6.2-44 C:\Users\daren\.gradle\caches\transforms-3\f4b06f723597fd8632bb457727775002\transformed\lifecycle-viewmodel-ktx-2.6.2\res
+com.example.fatchum2.app-coordinatorlayout-1.1.0-45 C:\Users\daren\.gradle\caches\transforms-3\fae655ce145ced16499665d14e4d08a2\transformed\coordinatorlayout-1.1.0\res
+com.example.fatchum2.app-credentials-1.2.0-rc01-46 C:\Users\daren\.gradle\caches\transforms-3\fc5772066db52f935462e034a74866e3\transformed\credentials-1.2.0-rc01\res
+com.example.fatchum2.app-lifecycle-viewmodel-2.6.2-47 C:\Users\daren\.gradle\caches\transforms-3\ff1ab0ae2806d9270ace4a78d70effb4\transformed\lifecycle-viewmodel-2.6.2\res

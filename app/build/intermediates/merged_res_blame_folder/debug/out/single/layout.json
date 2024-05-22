@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\activity_forgot_password.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\activity_register_two.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\activity_register_two.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\ingredient_card.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\ingredient_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\activity_recommended_search.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\activity_recommended_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\item_search_result.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\item_search_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\instruction_detail_screen.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\instruction_detail_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\activity_loading.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\activity_loading.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\fragment_favorite.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\fragment_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\activity_detail_screen.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\activity_detail_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\activity_search_area.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\activity_search_area.xml"
+    },
+    {
+        "merged": "com.example.fatchum2.app-mergeDebugResources-4:/layout/activity_detail_screen.xml",
+        "source": "com.example.fatchum2.app-main-7:/layout/activity_detail_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\ingredient_detail_screen.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\ingredient_detail_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-mergeDebugResources-4:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\daren\\.gradle\\daemon\\8.0\\com.example.fatchum2.app-main-7:\\layout\\fragment_home.xml"
+    }
+]
