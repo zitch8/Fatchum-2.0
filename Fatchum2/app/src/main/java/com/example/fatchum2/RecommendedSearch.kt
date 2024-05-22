@@ -138,7 +138,7 @@ class RecommendedSearch : AppCompatActivity(), OnRecipeClickListener {
                 if (response.isSuccessful) {
                     val recipes = response.body()
                     recipes?.forEach { recipe ->
-                        Log.d("MyTAG", "Name: ${recipe.recipe_name}, IMAG_URL: ${recipe.image_url} ")
+                        Log.d("MyTag", "Name: ${recipe.recipe_name}, IMAG_URL: ${recipe.image_url} ")
                     }
                     if (recipes != null) {
                         onSuccess(recipes)
@@ -146,11 +146,13 @@ class RecommendedSearch : AppCompatActivity(), OnRecipeClickListener {
                         onFailure()
                     }
                 } else {
+                    Log.d("ABC", "Eror")
                     onFailure()
                 }
             }
 
             override fun onFailure(call: Call<List<Recipe>>, t: Throwable) {
+                Log.d("DEF", "Eror")
                 onFailure()
             }
         })
@@ -179,7 +181,7 @@ class RecommendedSearch : AppCompatActivity(), OnRecipeClickListener {
         })
     }
 
-    // transforming instructions to array of string instead of array
+    // transforming instructions to list of string instead of string
     fun string_to_list(instructions: String): List<String> {
         val cleanedRecipeString = instructions.substring(1, instructions.length - 1)
         val instructionsArray = cleanedRecipeString.split("', '").map { it.trim('\'') }

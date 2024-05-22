@@ -51,14 +51,21 @@ class DetailScreen : AppCompatActivity() {
         carbohydratesData.setText(values?.carbohydrates)
         fiberData.setText(values?.fiber)
 
-
+        val valueInstruction = string_to_list(values!!.instructions)
         val instRecyclerView = findViewById<RecyclerView>(R.id.rvInstructions)
 
-        instructionDetailAdapter = values?.instructions?.let { InstructionDetailAdapter(it) }!!
+        instructionDetailAdapter = valueInstruction.let { InstructionDetailAdapter(it) }!!
 
 
         instRecyclerView.layoutManager = LinearLayoutManager(this)
         instRecyclerView.adapter = instructionDetailAdapter
 
+    }
+
+    // transforming instructions to list of string instead of string
+    fun string_to_list(instructions: String): List<String> {
+        val cleanedRecipeString = instructions.substring(1, instructions.length - 1)
+        val instructionsArray = cleanedRecipeString.split("', '").map { it.trim('\'') }
+        return instructionsArray
     }
 }

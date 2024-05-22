@@ -24,7 +24,7 @@ data class Recipe(
     val sugar: String,
     val carbohydrates: String,
     val fiber: String,
-    val instructions: List<String>,
+    val instructions: String,
     val tags: String
 ) : Parcelable {
 
@@ -38,7 +38,8 @@ data class Recipe(
         parcel.readString() ?: "",
         parcel.readString() ?: "",
         parcel.readString() ?: "",
-        parcel.createStringArrayList() ?: listOf(),
+        parcel.readString() ?: "",
+//        parcel.createStringArrayList() ?: listOf(),
         parcel.readString() ?: ""
     )
 

@@ -51,8 +51,9 @@ class SearchArea : AppCompatActivity(), SearchResultAdapter.OnItemClickListener 
             val joinList = selectedList.joinToString(" ")
             val joinListComma = selectedList.joinToString(", ")
             Log.i("MyTAG", joinList)
+//            val test = "chicken cheese"
             val ingredientsInput = IngredientsInput(joinList) // Initialize IngredientsInput
-
+//            val ingredientsInput = IngredientsInput(test)
             recommendedSearch.callSearchAPI(
                 ingredientsInput,
                 onSuccess = { recipes ->
@@ -64,7 +65,7 @@ class SearchArea : AppCompatActivity(), SearchResultAdapter.OnItemClickListener 
                 },
                 onFailure = {
                     // Handle the failure case if needed
-                    Log.e("MyTAG", "Error Cannot fetch")
+                    Log.e("MyTAG123", "Error Cannot fetch")
                 }
             )
         }
