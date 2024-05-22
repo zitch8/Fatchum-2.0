@@ -38,7 +38,11 @@ android {
 
 dependencies {
 
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.microsoft.onnxruntime:onnxruntime-android:latest.release'
+    //Makeramen
+    implementation 'com.makeramen:roundedimageview:2.3.0'
 
     //RetroFit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'

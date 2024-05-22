@@ -39,7 +39,7 @@
                 android:layout_height="38dp"
                 android:background="@android:color/transparent"
                 android:drawableStart="@drawable/ic_baseline_search_24"
-                android:drawablePadding="6dp"
+                android:paddingStart="10dp"
                 android:drawableTint="@color/gray"
                 android:ems="10"
                 android:hint="Add here"
@@ -57,7 +57,7 @@
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nsvView"
         android:layout_width="match_parent"
-        android:layout_height="670dp"
+        android:layout_height="680dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

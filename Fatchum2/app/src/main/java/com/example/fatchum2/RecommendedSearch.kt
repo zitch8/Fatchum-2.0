@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.Adapter
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,7 @@ import androidx.recyclerview.widget.RecyclerView
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import com.squareup.picasso.Picasso
 
 class RecommendedSearch : AppCompatActivity(), OnRecipeClickListener {
 
@@ -41,6 +43,9 @@ class RecommendedSearch : AppCompatActivity(), OnRecipeClickListener {
         val backButton = findViewById<ImageButton>(R.id.back_button)
 
         etRSearchBar.setText(intent.extras?.getString("ingredients") ?: "No message found")
+
+        // DISPLAY IMAGE
+
 
         etRSearchBar.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
