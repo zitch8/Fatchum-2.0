@@ -39,6 +39,10 @@
             android:name=".RecommendedSearch"
             android:exported="false" />
         <activity
+            android:name=".ForgotPassword"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".Main"
             android:exported="true"
             android:screenOrientation="portrait">

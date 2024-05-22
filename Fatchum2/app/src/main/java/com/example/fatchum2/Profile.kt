@@ -1,10 +1,21 @@
 package com.example.fatchum2
 
+import android.content.Context.MODE_PRIVATE
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
+import com.google.firebase.auth.FirebaseAuth
+
+private const val TAG = "ProfileActivity"
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,8 +45,21 @@ class Profile : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
+        val logoutBtn = view.findViewById<CardView>(R.id.cv_logout)
+        logoutBtn.setOnClickListener{
+
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(requireContext(), Login::class.java))
+            activity?.finish()
+        }
+
+
+        return view
     }
+
+
 
     companion object {
         /**
@@ -56,4 +80,5 @@ class Profile : Fragment() {
                 }
             }
     }
+
 }

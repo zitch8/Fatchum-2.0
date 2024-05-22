@@ -32,10 +32,9 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-
-
         val loginButton = findViewById<Button>(R.id.btnLogin)
         val register = findViewById<TextView>(R.id.tvRegister)
+        val forgotPassword = findViewById<TextView>(R.id.tvForgotPassword)
         
         // Initialize Firebase Auth
         auth = Firebase.auth
@@ -43,9 +42,10 @@ class Login : AppCompatActivity() {
         //Save Email and Password
         emailText = findViewById(R.id.editEmail)
         pwdText = findViewById(R.id.editPassword)
-        info = findViewById<TextView>(R.id.tvInfoLogin)
+        info = findViewById(R.id.tvInfoLogin)
         sf = getSharedPreferences("rememberMe", MODE_PRIVATE)
         editor = sf.edit()
+
 
         // Register Click Listener
         register.setOnClickListener {
@@ -54,6 +54,11 @@ class Login : AppCompatActivity() {
         }
         //Login Button Click Listener
         loginButton.setOnClickListener { login() }
+        // Forgot Password click listener
+        forgotPassword.setOnClickListener{
+            val openForgotPassword = Intent(this@Login, ForgotPassword::class.java)
+            startActivity(openForgotPassword)
+        }
 
         // Remove Info Text When Edit Text is Clicked
         val onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->

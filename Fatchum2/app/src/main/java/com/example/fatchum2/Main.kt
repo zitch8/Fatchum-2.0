@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+
 class Main : AppCompatActivity() {
     lateinit var mainAppBarLayout: AppBarLayout
 
