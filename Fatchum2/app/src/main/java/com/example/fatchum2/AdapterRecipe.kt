@@ -4,8 +4,10 @@ import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
 class AdapterRecipe(
     private val listRecipe: MutableList<Recipe>,
@@ -24,6 +26,9 @@ class AdapterRecipe(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val recipe = listRecipe[position]
         holder.tvRecipeName.text = recipe.recipe_name
+        Picasso.get()
+            .load(recipe.image_url)
+            .into(holder.ivThumbnail)
 
         holder.itemView.setOnClickListener {
             listener.onRecipeClick(recipe)
@@ -38,6 +43,7 @@ class AdapterRecipe(
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val tvRecipeName: TextView = itemView.findViewById(R.id.tvRecipeName)
+        val ivThumbnail: ImageView = itemView.findViewById(R.id.ivThumbNail)
     }
 }
 
