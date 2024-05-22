@@ -12,12 +12,13 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.LinearLayout
+import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
+import androidx.core.widget.NestedScrollView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
 
 class SearchArea : AppCompatActivity(), SearchResultAdapter.OnItemClickListener {
 
@@ -25,6 +26,7 @@ class SearchArea : AppCompatActivity(), SearchResultAdapter.OnItemClickListener 
     private val searchResults = mutableListOf<String>()
     private val selectedList = mutableListOf<String>()
     private lateinit var selectedIngredientsContainer: LinearLayout
+    private val recommendedSearch = RecommendedSearch()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,16 +41,32 @@ class SearchArea : AppCompatActivity(), SearchResultAdapter.OnItemClickListener 
 
         btnAdd.setOnClickListener {
             val ingredient = searchBar.text.toString()
-//            Toast.makeText(this, "${selectedList.contains(ingredient)}", Toast.LENGTH_SHORT).show()
             if (ingredient.isNotEmpty() && !selectedList.contains(ingredient)) {
                 addIngredient(ingredient)
                 searchBar.setText("")
-
             }
         }
 
-        btnFind.setOnClickListener{
-            startActivity(Intent(this@SearchArea, RecommendedSearch::class.java))
+        btnFind.setOnClickListener {
+            val joinList = selectedList.joinToString(" ")
+            val joinListComma = selectedList.joinToString(", ")
+            Log.i("MyTAG", joinList)
+            val ingredientsInput = IngredientsInput(joinList) // Initialize IngredientsInput
+
+            recommendedSearch.callSearchAPI(
+                ingredientsInput,
+                onSuccess = { recipes ->
+                        val intent = Intent(this@SearchArea, RecommendedSearch::class.java)
+                        Log.d("MyTAG", "${ArrayList(recipes)}" )
+                        intent.putParcelableArrayListExtra("recipes", ArrayList(recipes))
+                        intent.putExtra("ingredients", joinListComma)
+                        startActivity(intent)
+                },
+                onFailure = {
+                    // Handle the failure case if needed
+                    Log.e("MyTAG", "Error Cannot fetch")
+                }
+            )
         }
 
         searchResultsAdapter = SearchResultAdapter(searchResults, this)
@@ -100,7 +118,7 @@ class SearchArea : AppCompatActivity(), SearchResultAdapter.OnItemClickListener 
                         do {
                             val ingredient = cursor.getString(colIngredientName)
                             searchResults.add(ingredient)
-                            Log.i("MyTAG", ingredient)
+//                            Log.i("MyTAG", ingredient)
                         } while (cursor.moveToNext())
                     }
                     // Notify the adapter that data has changed

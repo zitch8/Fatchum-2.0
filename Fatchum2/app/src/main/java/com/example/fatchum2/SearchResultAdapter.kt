@@ -33,3 +33,4 @@ class SearchResultAdapter(private val searchResults: List<String>, private val i
 
     override fun getItemCount() = searchResults.size
 }
+

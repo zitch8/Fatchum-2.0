@@ -24,10 +24,12 @@ class Main : AppCompatActivity() {
         // ID's
         val mainSearch = findViewById<EditText>(R.id.mainSearch)
 //        val btnTwo = findViewById<TextView>(R.id.textView3)
-        mainSearch.setOnClickListener{
+        mainSearch.setOnFocusChangeListener{ _, hasFocus ->
+            if (hasFocus) {
+                val intent = Intent(this@Main, SearchArea::class.java)
+                startActivity(intent)
+            }
 //            Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this@Main, SearchArea::class.java)
-            startActivity(intent)
         }
 
         // Initial fragment
