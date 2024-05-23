@@ -44,10 +44,6 @@ class Main : AppCompatActivity() {
                         showToolbar()
                         replaceFragment(Home())
                     }
-                    R.id.favorite -> {
-                        hideToolbar()
-                        replaceFragment(Favorite())
-                    }
                     R.id.profile -> {
                         hideToolbar()
                         replaceFragment(Profile())

@@ -146,13 +146,13 @@ class RecommendedSearch : AppCompatActivity(), OnRecipeClickListener {
                         onFailure()
                     }
                 } else {
-                    Log.d("ABC", "Eror")
+                    Log.d("ABC", "Error")
                     onFailure()
                 }
             }
 
             override fun onFailure(call: Call<List<Recipe>>, t: Throwable) {
-                Log.d("DEF", "Eror")
+                Log.d("DEF", "Error")
                 onFailure()
             }
         })
