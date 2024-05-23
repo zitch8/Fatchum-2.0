@@ -11,9 +11,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+import com.squareup.picasso.Picasso
 
 private const val TAG = "ProfileActivity"
 
@@ -45,6 +49,24 @@ class Profile : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+//        var profile = view?.findViewById<ImageView>(R.id.iv_profile_pic)
+//        var userNameP = view?.findViewById<TextView>(R.id.user_name)?.text
+//        var emailP = view?.findViewById<TextView>(R.id.user_email)?.text
+//        val user = Firebase.auth.currentUser
+//        user?.let {
+//            // Name, email address, and profile photo Url
+//            val name = it.displayName
+//            val email = it.email
+//            val photoUrl = it.photoUrl
+//            userNameP = name
+//            emailP = email
+//            Picasso.get().load(photoUrl).into(profile)
+//
+//
+//            // Check if user's email is verified
+//            val emailVerified = it.isEmailVerified
+//            val uid = it.uid
+//        }
 
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
         val logoutBtn = view.findViewById<CardView>(R.id.cv_logout)
