@@ -1,5 +1,5 @@
 # Fatchum 2.0
-**Fatchum 2.0** is a recipe recommendation app built with Kotlin (Android) and a FastAPI backend. It helps users discover recipes using ingredients they already have. This app provide food recommendations using TF-IDF and cosine similarity.
+**Fatchum 2.0** is a recipe recommendation app built to help users discover delicious recipes using the ingredients they already have on hand. It's a simple, smart, and efficient way to reduce food waste and find your next favorite meal.
 
 ## Features
 **Mobile App (Kotlin)**
@@ -11,8 +11,7 @@
 - **Count Vectorizer + Cosine Similarity** -> tag-based recommendations.
 - **TF-IDF + Cosine Similarity** -> ingredient-based search engine.
 
-**Tech Stack**
-
+## Tech Stack
 **Mobile (Frontend)**
 - Kotlin + Andorid Studio
 - Firebase (Auth, Firestore, Cloud Storage)
