@@ -8,10 +8,10 @@
 - Firebase integration that supports Google Accounts
 
 **Backend (FastAPI + ML)**
--**Count Vectorizer + Cosine Similarity** -> tag-based recommendations.
--**TF-IDF + Cosine Similarity** -> ingredient-based search engine.
+- **Count Vectorizer + Cosine Similarity** -> tag-based recommendations.
+- **TF-IDF + Cosine Similarity** -> ingredient-based search engine.
 
-** Tech Stack**
+**Tech Stack**
 
 **Mobile (Frontend)**
 - Kotlin + Andorid Studio
