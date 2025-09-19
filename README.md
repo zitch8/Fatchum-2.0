@@ -17,7 +17,7 @@
 - Firebase (Auth, Firestore, Cloud Storage)
 - Retrofit for API calls
 
-**Backend (API)**
+**Backend ([API](https://github.com/zitch8/vectorizer-api))**
 - FastAPI
 - Scikit-learn (TF-IDF, CountVectorizer, Cosine Similarity)
 - Uvicorn / Gunicorn for deployment
