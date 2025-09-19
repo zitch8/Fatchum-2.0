@@ -1,0 +1,11 @@
+build/
+
+app/google-services.json
+app/proguard-rules.pro
+local.properties
+
+*.log
+**/RecipeDB
+
+.idea/
+.gradle/
